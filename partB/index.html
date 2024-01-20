@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Gallery Page</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="gallery-list">
+    <h2>Albums</h2>
+    <ul id="albums">
+        <!-- Lista albumów będzie wstawiana dynamicznie -->
+    </ul>
+</div>
+
+<div id="gallery-details" style="display: none;">
+    <h2 id="gallery-title"></h2>
+    <div id="thumbnails">
+        <!-- Miniaturki zdjęć z wybranej galerii będą wstawiane dynamicznie -->
+    </div>
+
+    <!-- Formularz do dodawania nowego zdjęcia -->
+    <form id="add-photo-form">
+        <label for="photo-title">Photo Title:</label>
+        <input id="photo-title" name="title" required type="text">
+        <label for="photo-url">Photo URL:</label>
+        <input id="photo-url" name="url" required type="text">
+        <button type="submit">Add Photo</button>
+    </form>
+
+    <!-- Przycisk do powrotu do listy albumów -->
+    <button id="back-to-albums">Back to Albums</button>
+</div>
+
+<div id="lightbox" style="display: none;">
+    <span class="close">&times;</span>
+    <img alt="Lightbox Image" id="lightbox-image" src="">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
